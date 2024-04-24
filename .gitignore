@@ -28,6 +28,6 @@ mta_archives/
 # IDEs
 # .vscode
 # .idea
-
+app/node_modules/
 # @cap-js/cds-typer
 @cds-models

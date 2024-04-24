@@ -7,13 +7,18 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4"
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "@sap/cds-hana": "^2"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-frontend": "cds watch --open frontend/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "hana": {
@@ -31,6 +36,10 @@
         "[production]": {
           "kind": "hana"
         }
+      },
+      "[production]": {
+        "auth": "xsuaa",
+        "db": "hana"
       }
     }
   }

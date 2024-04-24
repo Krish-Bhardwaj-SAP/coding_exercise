@@ -27,7 +27,7 @@ Learn more at https://cap.cloud.sap/docs/get-started/.
 
 
 ## to run this project 
-
+```
 git clone https://github.com/Krish-Bhardwaj-SAP/coding_exercise.git
 npm i 
 cd app
@@ -35,3 +35,4 @@ npm i
 cd ..
 cds deploy
 cds w
+```

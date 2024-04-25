@@ -1,4 +1,3 @@
-// implement the service here 
 const cds = require("@sap/cds");
 const { cities } = cds.entities;
 module.exports = function (srv) {

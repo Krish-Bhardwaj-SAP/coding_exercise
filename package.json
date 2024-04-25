@@ -38,7 +38,10 @@
         }
       },
       "[production]": {
-        "auth": "xsuaa",
+        "auth": {
+          "kind": "xsuaa",
+          "restrict_all_services": false
+        },
         "db": "hana"
       }
     }

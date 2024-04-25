@@ -5,6 +5,9 @@
   "repository": "<Add your repository here>",
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "node": "^20"
+  },
   "dependencies": {
     "@sap/cds": "^7",
     "@sap/xssec": "^3",
@@ -38,8 +41,11 @@
         }
       },
       "[production]": {
-        "auth": "xsuaa",
-        "db": "hana"
+        "db": "hana",
+        "auth": {
+          "kind": "xsuaa",
+          "restrict_all_services": "false"
+        }
       }
     }
   }

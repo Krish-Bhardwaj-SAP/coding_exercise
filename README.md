@@ -29,13 +29,11 @@ Deployed on SAP BTP:
 ## Prerequisites
 Before proceeding with the setup, ensure you have the following installed:
 -  [Node.js](https://nodejs.org/en/download)
--  [CDS](https://cap.cloud.sap/docs/get-started/jumpstart#setup)
+-  [SAP CAP CDS](https://cap.cloud.sap/docs/get-started/jumpstart#setup)
 -  [Git](https://git-scm.com/downloads) 
 -  [UI5 setup](https://sap.github.io/ui5-tooling/v3/pages/GettingStarted/)
 -  [Cloud Foundary CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) 
 -  Access to [Trial BTP](https://cockpit.hanatrial.ondemand.com/trial/#/home/trial) (optional)
--  [Github Desktop](https://desktop.github.com/) (optional)
-
 
 ## Setup
 1. **Clone the repository using the following command:**

@@ -17,6 +17,10 @@ Deployed on SAP BTP:
 
 **Note**: The above links are deployed on SAP BTP Trial Account and may not be available after the trial period, you can refer to the video for the demo or set up the project locally.
 
+
+https://github.com/Krish-Bhardwaj-SAP/coding_exercise/assets/144874445/9471f37e-29ab-42ae-b332-37e7e2205034
+
+
 ## Tech stack used:
 - SAP CAP Framework
 - SAP CDS

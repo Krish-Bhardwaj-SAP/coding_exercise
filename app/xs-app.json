@@ -1,5 +1,5 @@
 {
-  "welcomeFile": "app/index.html",
+  "welcomeFile": "app/dist/index.html",
   "routes": [
     {
       "source": "^/app/(.*)$",

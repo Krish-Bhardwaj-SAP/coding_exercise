@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/model/json/JSONModel","sap/ui/Device"],(e,t,i)=>{"use strict";return e.extend("frontend.Component",{init(){e.prototype.init.apply(this,arguments)},getContentDensityClass(){return i.support.touch?"sapUiSizeCozy":"sapUiSizeCompact"}})});
+//# sourceMappingURL=Component.js.map

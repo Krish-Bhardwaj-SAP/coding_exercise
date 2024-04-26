@@ -1,0 +1,125 @@
+<mvc:View
+	controllerName="frontend.controller.App"
+	xmlns="sap.m"
+	xmlns:table="sap.ui.table"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+>
+	<Shell>
+		<App id="app">
+			<Page
+				id="page"
+				enableScrolling="false"
+				titleAlignment="Center"
+				backgroundDesign="List"
+				titleLevel="H1"
+				title="Coding Exercise"
+				floatingFooter="false"
+			>
+				<content>
+					<table:Table
+						id="cityTable"
+						selectionMode="None"
+						enableCellFilter="true"
+						visibleRowCount="10"
+						visibleRowCountMode="Auto"
+						enableColumnReordering="false"
+						enableSelectAll="false"
+						class="sapUiSizeCozy"
+						threshold="15"
+						enableBusyIndicator="true"
+						rows="{
+						path: '/cities',
+						parameters: {operationMode: 'Auto'}
+					}"
+					>
+						<table:extension>
+							<Toolbar style="Clear">
+								<content>
+									<Title text="City Data" level="H2" />
+									<ToolbarSpacer />
+									<SearchField width="70%" liveChange="onSearch" />
+									<ToolbarSpacer />
+									<Button 
+										text="Add City" 
+										icon="sap-icon://add" 
+										type="Ghost"
+										press="onAddCity" 
+									/>
+								</content>
+							</Toolbar>
+						</table:extension>
+						<table:rowSettingsTemplate>
+							<table:RowSettings highlight="{status}" />
+						</table:rowSettingsTemplate>
+						<table:columns>
+							<table:Column 
+								showFilterMenuEntry="false" 
+								sortProperty="name"
+								filterProperty="name" 
+								width="auto"
+							>
+								<table:label>
+									<Title text="Name" />
+								</table:label>
+								<table:template>
+									<Title text="{name}" />
+								</table:template>
+							</table:Column>
+							<table:Column 
+								showFilterMenuEntry="false" 
+								sortProperty="area"
+								filterProperty="area" 
+								hAlign="End" 
+								width="auto"
+							>
+								<table:label>
+									<Title text="Area (sq.km.)" />
+								</table:label>
+								<table:template>
+									<ObjectNumber number="{area}" textAlign="End" />
+								</table:template>
+							</table:Column>
+							<table:Column 
+								showFilterMenuEntry="false" 
+								sortProperty="population"
+								filterProperty="population" 
+								hAlign="End" 
+								width="auto"
+							>
+								<table:label>
+									<Title text="Population" />
+								</table:label>
+								<table:template>
+									<ObjectNumber number="{population}" textAlign="End" />
+								</table:template>
+							</table:Column>
+							<table:Column 
+								showFilterMenuEntry="false" 
+								sortProperty="density"
+								filterProperty="density" 
+								hAlign="End" 
+								width="auto"
+							>
+								<table:label>
+									<Title text="Density (per sq.km.)" />
+								</table:label>
+								<table:template>
+									<ObjectNumber number="{density}" textAlign="End" />
+								</table:template>
+							</table:Column>
+						</table:columns>
+					</table:Table>
+				</content>
+				<footer>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer />
+							<Text text="Developed By Krish Bhardwaj" />
+						</content>
+					</Toolbar>
+				</footer>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>

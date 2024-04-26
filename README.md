@@ -28,7 +28,8 @@ https://github.com/Krish-Bhardwaj-SAP/coding_exercise/assets/144874445/9471f37e-
 - SAP UI5
 - SQLite ( for Local Development )
 - SAP HANA DB ( for Production )
-- SAP BTP ( for Development )
+- SAP BTP ( for Deployment )
+- CF ( for Deployment )
 
 ## Prerequisites
 Before proceeding with the setup, ensure you have the following installed:

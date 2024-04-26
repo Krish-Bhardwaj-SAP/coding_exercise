@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "author": "SAP SE",
+  "scripts": {
+    "start": "ui5 serve -o test/mockServer.html",
+    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3"
+  }
+}

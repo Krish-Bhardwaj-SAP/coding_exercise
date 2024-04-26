@@ -27,7 +27,7 @@ https://github.com/Krish-Bhardwaj-SAP/coding_exercise/assets/144874445/9471f37e-
 - Node.js
 - SAP UI5
 - SQLite ( for Local Development )
-- SAP HANA DB ( for Deployment )
+- SAP HANA DB ( for Production )
 - SAP BTP ( for Development )
 
 ## Prerequisites

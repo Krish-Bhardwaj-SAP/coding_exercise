@@ -1,7 +1,7 @@
 namespace sap.ui.codingExercise;
 
 entity cities {
-    name : String;
+    key name : String;
     area : Double;
     population: Integer
 }

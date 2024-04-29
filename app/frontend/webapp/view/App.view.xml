@@ -74,7 +74,7 @@
 								width="auto"
 							>
 								<table:label>
-									<Title text="Area (sq.km.)" />
+									<Title text="Area (sq.mi.)" />
 								</table:label>
 								<table:template>
 									<ObjectNumber number="{area}" textAlign="End" />
